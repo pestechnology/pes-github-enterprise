@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Source Help Guide | PES University</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top utility bar -->
+  <div class="utility-bar">
+    <a href="faculty-staff.html">For Faculty & Staff</a>
+    <a href="students.html">For Students</a>
+    <a href="it-support.html">For IT Support Providers</a>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <img src="images/PES_UNI_LIN_RGB.jpg" alt="PES University Logo" class="logo">
+      <div class="header-title">
+        <h1>Information Systems & Technology</h1>
+      </div>
+    </div>
+    <div class="header-search">
+      <form action="search.html" method="GET">
+        <input type="text" name="q" placeholder="Search IS&T and The Knowledge Base">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav-tabs">
+    <div class="nav-container">
+      <a href="get-started.html" class="nav-item get-started">GET STARTED WITH IT</a>
+      <a href="services.html" class="nav-item services">OUR SERVICES</a>
+      <a href="software.html" class="nav-item software active">GET SOFTWARE</a>
+      <a href="security.html" class="nav-item security">INFORMATION SECURITY</a>
+      <a href="about.html" class="nav-item about">ABOUT IS&T</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="software.html">Get Software</a> > <a href="index.html">GitHub Enterprise</a> > Campus Source Help Guide
+  </div>
+
+  <!-- Content area -->
+  <div class="content-container">
+    <main class="main-content">
+      <div class="back-link">
+        <a href="index.html">« Back to Campus Source</a>
+      </div>
+      
+      <h1 class="page-title">Campus Source Help Guide</h1>
+      
+      <div class="service-description">
+        <p>This comprehensive guide covers everything you need to know about using Campus Source, PES University's GitHub Enterprise platform. Whether you're a student working on course projects or faculty managing research repositories, this guide will help you get the most out of our collaborative development environment.</p>
+      </div>
+
+      <div class="help-content">
+        <section class="help-section-content">
+          <h2>Getting Started</h2>
+          <h3>Account Setup</h3>
+          <ol>
+            <li><strong>Create GitHub Account:</strong> Sign up at <a href="https://github.com" target="_blank">github.com</a> using your official <code>@pes.edu</code> email address</li>
+            <li><strong>Join PES Organization:</strong> Accept the invitation to join the "pestechnology" organization</li>
+            <li><strong>Enable Two-Factor Authentication:</strong> Set up 2FA using an authenticator app (required for all users)</li>
+            <li><strong>Complete Profile:</strong> Add your full name and department information</li>
+          </ol>
+
+          <div class="alert-box">
+            <strong>Important:</strong> Two-Factor Authentication is mandatory for all Campus Source users. Use authenticator apps like Google Authenticator or Microsoft Authenticator, not SMS.
+          </div>
+        </section>
+
+        <section class="help-section-content">
+          <h2>Repository Management</h2>
+          <h3>Repository Naming Convention</h3>
+          <p>All repositories must follow the standardized naming format:</p>
+          <div class="code-example">
+            <code>PESU-&lt;ProjectName&gt;-&lt;ProjectId&gt;</code>
+          </div>
+          <p>Example: <code>PESU-StockMarketChatbot-P01</code></p>
+
+          <h3>Repository Topics</h3>
+          <p>Tag your repositories with relevant topics for better discoverability:</p>
+          <ul>
+            <li><strong>Course Code:</strong> CSE101, ECE202, etc.</li>
+            <li><strong>Academic Year:</strong> AY2024-25</li>
+            <li><strong>Semester:</strong> semester-1, semester-2</li>
+            <li><strong>Project Type:</strong> capstone, lab-assignment, research</li>
+            <li><strong>Technology:</strong> python, javascript, machine-learning</li>
+          </ul>
+        </section>
+
+        <section class="help-section-content">
+          <h2>Team Management</h2>
+          
+          <div class="org-structure-help">
+            <img src="images/campus-source-org-structure.png" alt="Campus Source Team Structure" class="org-diagram-help">
+          </div>
+          
+          <h3>Team Structure</h3>
+          <ul>
+            <li><strong>Program Teams:</strong> btech-cse, mtech-ece, mba, etc.</li>
+            <li><strong>Staff Teams:</strong> professors, teaching-assistants</li>
+            <li><strong>Project Teams:</strong> Auto-created for each project</li>
+          </ul>
+
+          <h3>Access Control</h3>
+          <p>Teams provide different access levels:</p>
+          <ul>
+            <li><strong>Read:</strong> View code, clone repositories, create issues</li>
+            <li><strong>Write:</strong> Push changes, merge pull requests, manage issues</li>
+            <li><strong>Admin:</strong> Full repository management, team administration</li>
+          </ul>
+        </section>
+
+        <section class="help-section-content">
+          <h2>Project Workflow</h2>
+          <h3>Development Process</h3>
+          <ol>
+            <li><strong>Branch Protection:</strong> Main branch is protected and requires pull requests</li>
+            <li><strong>Feature Development:</strong> Create feature branches for new work</li>
+            <li><strong>Code Review:</strong> All changes must be reviewed before merging</li>
+            <li><strong>Continuous Integration:</strong> Automated testing and security scanning</li>
+          </ol>
+
+          <h3>Pull Request Guidelines</h3>
+          <ul>
+            <li>Provide clear, descriptive titles and descriptions</li>
+            <li>Reference related issues using keywords (closes #123)</li>
+            <li>Ensure all CI checks pass before requesting review</li>
+            <li>Address reviewer feedback promptly</li>
+          </ul>
+        </section>
+
+        <section class="help-section-content">
+          <h2>Security Best Practices</h2>
+          <h3>Credential Management</h3>
+          <ul>
+            <li>Never commit API keys, passwords, or sensitive data</li>
+            <li>Use GitHub Secrets for CI/CD pipeline credentials</li>
+            <li>Enable Dependabot alerts for vulnerable dependencies</li>
+            <li>Regular security scanning is automatically enabled</li>
+          </ul>
+
+          <h3>Access Management</h3>
+          <ul>
+            <li>Use personal access tokens instead of passwords</li>
+            <li>Regularly review and rotate access tokens</li>
+            <li>Report suspicious activity immediately</li>
+            <li>Follow principle of least privilege</li>
+          </ul>
+        </section>
+
+        <section class="help-section-content">
+          <h2>Common Tasks</h2>
+          
+          <div class="task-item">
+            <h4>Creating a New Project Repository</h4>
+            <ol>
+              <li>Contact your professor or TA to initiate project creation</li>
+              <li>Repository will be created with proper naming and topics</li>
+              <li>Team members will be automatically added</li>
+              <li>Branch protection and security features will be configured</li>
+            </ol>
+          </div>
+
+          <div class="task-item">
+            <h4>Joining an Existing Project</h4>
+            <ol>
+              <li>Accept the email invitation to join the repository</li>
+              <li>Clone the repository to your local machine</li>
+              <li>Set up your development environment</li>
+              <li>Create a feature branch for your first contribution</li>
+            </ol>
+          </div>
+
+          <div class="task-item">
+            <h4>Submitting Code Changes</h4>
+            <ol>
+              <li>Create a new branch: <code>git checkout -b feature/your-feature-name</code></li>
+              <li>Make your changes and commit: <code>git commit -m "Add feature description"</code></li>
+              <li>Push to your branch: <code>git push origin feature/your-feature-name</code></li>
+              <li>Create a pull request through the GitHub web interface</li>
+              <li>Request review from team members or TAs</li>
+            </ol>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="help-section">
+        <h3>QUICK LINKS</h3>
+        <ul>
+          <li><a href="onboarding-guide.html">Onboarding Guide</a></li>
+          <li><a href="github-bootcamp.html">GitHub Bootcamp</a></li>
+          <li><a href="project-templates.html">Project Templates</a></li>
+          <li><a href="troubleshooting.html">Troubleshooting</a></li>
+        </ul>
+        
+        <h3>EXTERNAL RESOURCES</h3>
+        <ul>
+          <li><a href="https://docs.github.com" target="_blank">GitHub Documentation</a></li>
+          <li><a href="https://git-scm.com/docs" target="_blank">Git Documentation</a></li>
+          <li><a href="https://education.github.com/students" target="_blank">GitHub Student Pack</a></li>
+        </ul>
+        
+        <div class="contact-info">
+          <p>Get IT help by <strong>email</strong> or by <strong>phone, 24/7</strong><br>
+          Email: <a href="mailto:ithelp@pes.edu">ithelp@pes.edu</a><br>
+          Phone: +91-80-2677-2534</p>
+          
+          <p>Get IT help <strong>in person</strong>, M-F, 9am-5pm<br>
+          at the IT Service Center, Main Campus</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="images/pesu-white-logo.png" alt="PES University" class="footer-logo">
+      </div>
+      <div class="footer-center">
+        <strong>Get Help 24/7 — Ask the Service Desk</strong><br>
+        Access 24/7 Chat via the PES App<br>
+        <a href="mailto:ithelp@pes.edu">ithelp@pes.edu</a> | +91-80-2677-2534 | <a href="accessibility.html">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

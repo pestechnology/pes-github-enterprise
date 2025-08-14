@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Source Onboarding Guide | PES University</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top utility bar -->
+  <div class="utility-bar">
+    <a href="faculty-staff.html">For Faculty & Staff</a>
+    <a href="students.html">For Students</a>
+    <a href="it-support.html">For IT Support Providers</a>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <img src="images/PES_UNI_LIN_RGB.jpg" alt="PES University Logo" class="logo">
+      <div class="header-title">
+        <h1>Information Systems & Technology</h1>
+      </div>
+    </div>
+    <div class="header-search">
+      <form action="search.html" method="GET">
+        <input type="text" name="q" placeholder="Search IS&T and The Knowledge Base">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav-tabs">
+    <div class="nav-container">
+      <a href="get-started.html" class="nav-item get-started">GET STARTED WITH IT</a>
+      <a href="services.html" class="nav-item services">OUR SERVICES</a>
+      <a href="software.html" class="nav-item software active">GET SOFTWARE</a>
+      <a href="security.html" class="nav-item security">INFORMATION SECURITY</a>
+      <a href="about.html" class="nav-item about">ABOUT IS&T</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="software.html">Get Software</a> > <a href="index.html">GitHub Enterprise</a> > Onboarding Guide
+  </div>
+
+  <!-- Content area -->
+  <div class="content-container">
+    <main class="main-content">
+      <div class="back-link">
+        <a href="index.html">« Back to Campus Source</a>
+      </div>
+      
+      <div class="onboarding-header">
+        <img src="images/pesu.png" alt="PES University" class="onboarding-logo">
+        <div class="onboarding-title-section">
+          <h1 class="page-title">Campus Source Onboarding Guide</h1>
+          <div class="onboarding-subtitle">Your journey to collaborative development starts here</div>
+        </div>
+      </div>
+      
+      <div class="service-description">
+        <p>Welcome to Campus Source! This step-by-step guide will help you get started with PES University's GitHub Enterprise platform. Follow these steps to set up your account, configure security settings, and begin collaborating on projects.</p>
+      </div>
+
+      <div class="onboarding-steps">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Create Your GitHub Account</h3>
+            <p>Start by creating a GitHub account using your official PES University email address.</p>
+            <div class="step-details">
+              <h4>Requirements:</h4>
+              <ul>
+                <li>Use your <code>@pes.edu</code> email address</li>
+                <li>Choose a professional username (preferably your actual name)</li>
+                <li>Create a strong password</li>
+                <li>Complete email verification</li>
+              </ul>
+              <div class="action-button">
+                <a href="https://github.com/signup" target="_blank" class="btn-primary">Create GitHub Account</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Join PES Technology Organization</h3>
+            <p>Accept the invitation to join the PES University GitHub organization.</p>
+            <div class="step-details">
+              <h4>Steps:</h4>
+              <ol>
+                <li>Check your PES email for an organization invitation</li>
+                <li>Click the invitation link</li>
+                <li>Accept the invitation to join "pestechnology"</li>
+                <li>Complete your organization profile</li>
+              </ol>
+              <div class="alert-box">
+                <strong>Note:</strong> If you haven't received an invitation, contact your instructor or <a href="mailto:ithelp@pes.edu">ithelp@pes.edu</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Enable Two-Factor Authentication</h3>
+            <p>Secure your account with mandatory two-factor authentication.</p>
+            <div class="step-details">
+              <h4>Setup Process:</h4>
+              <ol>
+                <li>Go to GitHub Settings > Password and authentication</li>
+                <li>Click "Enable two-factor authentication"</li>
+                <li>Choose "Set up using an app" (recommended)</li>
+                <li>Install an authenticator app (Google Authenticator, Microsoft Authenticator, or Authy)</li>
+                <li>Scan the QR code with your authenticator app</li>
+                <li>Enter the verification code</li>
+                <li><strong>Important:</strong> Download and securely store your recovery codes</li>
+              </ol>
+              <div class="alert-box">
+                <strong>Security Note:</strong> Do not use SMS for 2FA. Use authenticator apps for better security.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Complete Your Profile</h3>
+            <p>Set up your GitHub profile with relevant academic information.</p>
+            <div class="step-details">
+              <h4>Profile Information:</h4>
+              <ul>
+                <li><strong>Full Name:</strong> Your actual name for easy identification</li>
+                <li><strong>Bio:</strong> Your program, year, and department (e.g., "B.Tech CSE, 3rd Year")</li>
+                <li><strong>Location:</strong> Bengaluru, Karnataka</li>
+                <li><strong>Company:</strong> PES University</li>
+                <li><strong>Profile Picture:</strong> Professional photo (optional but recommended)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3>Configure Git Locally</h3>
+            <p>Set up Git on your local machine for seamless development.</p>
+            <div class="step-details">
+              <h4>Git Configuration:</h4>
+              <div class="code-example">
+                <code>
+                  git config --global user.name "Your Full Name"<br>
+                  git config --global user.email "your.email@pes.edu"<br>
+                  git config --global init.defaultBranch main
+                </code>
+              </div>
+              <h4>Authentication Setup:</h4>
+              <ol>
+                <li>Create a Personal Access Token in GitHub Settings</li>
+                <li>Use token instead of password for Git operations</li>
+                <li>Or set up SSH keys for secure access</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">6</div>
+          <div class="step-content">
+            <h3>Join Your Course Team</h3>
+            <p>Get added to your program-specific team for course access.</p>
+            <div class="step-details">
+              <h4>Team Assignment:</h4>
+              <ul>
+                <li>Your instructor will add you to the appropriate program team</li>
+                <li>Teams are organized by program (e.g., btech-cse, mtech-ece)</li>
+                <li>Team membership grants access to course repositories</li>
+                <li>You'll receive notifications about team activities</li>
+              </ul>
+              <p>If you're not added to a team within 48 hours, contact your course instructor.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card completion">
+          <div class="step-number">✓</div>
+          <div class="step-content">
+            <h3>You're All Set!</h3>
+            <p>Congratulations! Your Campus Source account is now ready for use.</p>
+            <div class="step-details">
+              <h4>Next Steps:</h4>
+              <ul>
+                <li>Explore the <a href="campus-source-help.html">Campus Source Help Guide</a></li>
+                <li>Take the <a href="github-bootcamp.html">GitHub Bootcamp</a> course</li>
+                <li>Start working on your first project repository</li>
+                <li>Join the PES Developer Community</li>
+              </ul>
+              <div class="action-button">
+                <a href="https://github.com/pestechnology" target="_blank" class="btn-primary">Go to Campus Source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="additional-resources">
+        <h2>Additional Resources</h2>
+        <div class="resource-grid">
+          <div class="resource-item">
+            <h4>Git Basics Tutorial</h4>
+            <p>Learn fundamental Git commands and workflows</p>
+            <a href="git-tutorial.html">Start Tutorial</a>
+          </div>
+          <div class="resource-item">
+            <h4>GitHub Flow Guide</h4>
+            <p>Understand branching, pull requests, and collaboration</p>
+            <a href="github-flow.html">Read Guide</a>
+          </div>
+          <div class="resource-item">
+            <h4>Security Best Practices</h4>
+            <p>Keep your repositories and code secure</p>
+            <a href="security-practices.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="help-section">
+        <h3>NEED HELP?</h3>
+        <ul>
+          <li><a href="troubleshooting.html">Common Issues</a></li>
+          <li><a href="faq.html">Frequently Asked Questions</a></li>
+          <li><a href="contact-support.html">Contact Support</a></li>
+        </ul>
+        
+        <h3>QUICK LINKS</h3>
+        <ul>
+          <li><a href="https://docs.github.com/en/get-started" target="_blank">GitHub Docs</a></li>
+          <li><a href="https://git-scm.com/doc" target="_blank">Git Documentation</a></li>
+          <li><a href="download-tools.html">Download Tools</a></li>
+        </ul>
+        
+        <div class="contact-info">
+          <p>Get IT help by <strong>email</strong> or by <strong>phone, 24/7</strong><br>
+          Email: <a href="mailto:ithelp@pes.edu">ithelp@pes.edu</a><br>
+          Phone: +91-80-2677-2534</p>
+          
+          <p>Get IT help <strong>in person</strong>, M-F, 9am-5pm<br>
+          at the IT Service Center, Main Campus</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="images/pesu-white-logo.png" alt="PES University" class="footer-logo">
+      </div>
+      <div class="footer-center">
+        <strong>Get Help 24/7 — Ask the Service Desk</strong><br>
+        Access 24/7 Chat via the PES App<br>
+        <a href="mailto:ithelp@pes.edu">ithelp@pes.edu</a> | +91-80-2677-2534 | <a href="accessibility.html">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
