@@ -2786,3 +2786,262 @@ body {
     font-size: 1rem;
   }
 }
+/* Enhanced Campus Source Demo with Video */
+.campus-source-demo {
+  margin: 3rem 0;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 2.5rem;
+}
+
+.demo-video h3 {
+  color: var(--pes-primary);
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.video-container {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.demo-video-player {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+  background: var(--text-dark);
+}
+
+.demo-caption {
+  color: var(--text-light);
+  font-style: italic;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* GIF Section within Demo */
+.demo-gif-section {
+  border-top: 2px solid var(--border-light);
+  padding-top: 2rem;
+}
+
+.demo-gif-section h4 {
+  color: var(--pes-secondary);
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.gif-container {
+  text-align: center;
+}
+
+.demo-gif {
+  max-width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.gif-caption {
+  color: var(--text-light);
+  font-style: italic;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Bootcamp Preview Video */
+.bootcamp-preview {
+  margin: 2.5rem 0;
+  background: linear-gradient(135deg, var(--background-light) 0%, #e8f5e8 100%);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 2.5rem;
+}
+
+.preview-video h3 {
+  color: var(--pes-primary);
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.bootcamp-video-player {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(26, 71, 42, 0.2);
+  margin-bottom: 1rem;
+  background: var(--text-dark);
+}
+
+.video-caption {
+  color: var(--text-dark);
+  font-weight: 500;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Video Player Enhancements */
+video {
+  outline: none;
+}
+
+video::-webkit-media-controls-panel {
+  background-color: var(--pes-primary);
+}
+
+video::-webkit-media-controls-play-button {
+  background-color: var(--pes-primary);
+  border-radius: 50%;
+}
+
+video::-webkit-media-controls-volume-slider {
+  background-color: var(--pes-accent);
+}
+
+video::-webkit-media-controls-timeline {
+  background-color: var(--pes-accent);
+}
+
+/* Video Loading State */
+.demo-video-player,
+.bootcamp-video-player {
+  position: relative;
+}
+
+.demo-video-player::before,
+.bootcamp-video-player::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: var(--pes-primary);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Hover Effects for Video Containers */
+.video-container:hover .demo-video-player,
+.video-container:hover .bootcamp-video-player {
+  box-shadow: 0 12px 35px rgba(26, 71, 42, 0.25);
+}
+
+/* Mobile Responsiveness for Videos */
+@media (max-width: 768px) {
+  .campus-source-demo {
+    padding: 2rem 1.5rem;
+  }
+  
+  .bootcamp-preview {
+    padding: 2rem 1.5rem;
+  }
+  
+  .demo-video h3,
+  .preview-video h3 {
+    font-size: 1.4rem;
+  }
+  
+  .demo-gif-section h4 {
+    font-size: 1.2rem;
+  }
+  
+  .demo-video-player,
+  .bootcamp-video-player {
+    border-radius: 8px;
+  }
+  
+  .demo-caption,
+  .video-caption,
+  .gif-caption {
+    font-size: 0.9rem;
+  }
+  
+  .demo-gif {
+    max-width: 100%;
+  }
+}
+
+/* Accessibility Improvements for Videos */
+.demo-video-player:focus,
+.bootcamp-video-player:focus {
+  outline: 3px solid var(--pes-accent);
+  outline-offset: 2px;
+}
+
+/* Video Container Animation */
+@keyframes videoFadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.video-container {
+  animation: videoFadeIn 0.6s ease-out;
+}
+
+/* Course Link Styling */
+.resource-links .course-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--pes-primary);
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  padding: 0.3rem 0.8rem;
+  background: linear-gradient(135deg, var(--background-light) 0%, #e8f5e8 100%);
+  border-radius: 6px;
+  border: 1px solid var(--pes-accent);
+  transition: all 0.3s ease;
+}
+
+.resource-links .course-link::before {
+  content: "🎓";
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.resource-links .course-link::after {
+  content: "↗";
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.resource-links .course-link:hover {
+  background: linear-gradient(135deg, var(--pes-primary) 0%, var(--pes-secondary) 100%);
+  color: white;
+  border-color: var(--pes-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 71, 42, 0.3);
+}
+
+.resource-links .course-link:hover::after {
+  opacity: 1;
+}
+
+/* Special styling for course links in lists */
+.resource-links li:has(.course-link) {
+  margin: 0.75rem 0;
+}
+
+.resource-links li:has(.course-link)::before {
+  content: "📚";
+  color: var(--pes-accent);
+}
